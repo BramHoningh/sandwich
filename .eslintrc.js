@@ -1,17 +1,53 @@
+// http://eslint.org/docs/user-guide/configuring
+
 module.exports = {
   root: true,
-  env: {
-    node: true
-  },
-  'extends': [
-    'plugin:vue/essential',
-    'eslint:recommended'
-  ],
-  rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
-  },
+  parser: 'vue-eslint-parser',
   parserOptions: {
-    parser: 'babel-eslint'
-  }
-}
+    sourceType: 'module',
+    parser: 'babel-eslint',
+  },
+  env: {
+    browser: true,
+    node:true
+  },
+  extends: ['@vue/airbnb', '@vue/prettier', 'plugin:vue/essential', 'plugin:vue/recommended'],
+  plugins: ['import', 'prettier', 'vue'],
+  settings: {
+    'import/resolver': {
+      webpack: {
+        config: require.resolve('@vue/cli-service/webpack.config.js'),
+      },
+    },
+  },
+  rules: {
+    // don't require .vue extension when importing
+    'import/extensions': [
+      'error',
+      'always',
+      {
+        js: 'never',
+        vue: 'never',
+        ts: 'never',
+      },
+    ],
+    // allow debugger during development
+    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-param-reassign': 0,
+    // only for use with getter-setters
+    'no-underscore-dangle': 0,
+    'prettier/prettier': [
+      'error',
+      { singleQuote: true, trailingComma: 'all', printWidth: 100, tabWidth: 2 },
+    ],
+  },
+  overrides: [
+    {
+      files: ['src/**/*.vue'],
+      rules: {
+        'prettier/prettier': ['off'],
+      },
+    },
+  ],
+};
