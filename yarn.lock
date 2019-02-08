@@ -10330,6 +10330,13 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
+vue-cli-plugin-structure-generator@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/vue-cli-plugin-structure-generator/-/vue-cli-plugin-structure-generator-0.5.0.tgz#d5bee5f9af5afd4796130587d412b57dee5fd849"
+  integrity sha512-IQiEMcUDnGPwBrfzH1+v2qA+jjN7yxz4N8WXKVUpTqa0S4i9IFDUJnJOkfhJ/SI+6hut7eL2I3k1hnTGwg2+YA==
+  dependencies:
+    lodash "^4.17.4"
+
 vue-cli-plugin-structure@^0.7.2:
   version "0.7.2"
   resolved "https://registry.yarnpkg.com/vue-cli-plugin-structure/-/vue-cli-plugin-structure-0.7.2.tgz#63c60580a34bafa4b6ef0742f2a9d1f26ec5ceab"
