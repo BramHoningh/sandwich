@@ -1,23 +1,51 @@
 // Color Pallette
+$white:           #fff;
+$black:		      #000;
+$darkGray:        #222;
+$gray:            #777;
 
-$white:     #fff;
-$black:		  #000;
-$darkGray:  #222;
-$gray:      #777;
+// Deep Blue
+$deep-blue:       #142FDD;
+$deep-blue-2:     #4359E4;
+$deep-blue-3:     #7282EB;
+$deep-blue-4:     #A1ACF2;
+$deep-blue-5:     #D0D5F8;
+$deep-blue-6:     #EDEFFD;
+$deep-blue-7:     #F6F7FF;
 
-$red:       red;
-$purple:    purple;
-$blue-dark: darkblue;
-$blue: 		  blue;
-$cyan:      cyan;
-$green:     green;
-$yellow:    yellow;
-$orange: 		orange;
+// Blended Blue
+$blended-blue:    #14B6DD;
+$blended-blue-2:  #43C4E4;
+$blended-blue-3:  #72D3EB;
+$blended-blue-4:  #A1E2F2;
+$blended-blue-5:  #D0F0F8;
+$blended-blue-6:  #EDFAFD;
+$blended-blue-7:  #F6FCFE;
+
+// Almost Black
+$almost-black:    #040825;
+$almost-black-2:  #363A51;
+$almost-black-3:  #686B7C;
+$almost-black-4:  #9A9CA8;
+$almost-black-5:  #CDCED3;
+$almost-black-6:  #EBECEE;
+$almost-black-7:  #FAFAFB;
+
+// Jam Red
+$jam-red:         #DD1460;
+$jam-red-2:       #E43376;
+$jam-red-3:       #F2A1C0;
+$jam-red-4:       #FDEDF3;
+
+// Meadow Green
+$meadow-green:    #14DD85;
+$meadow-green-2:  #43E49D;
+$meadow-green-3:  #A1F2CE;
+$meadow-green-4:  #EDFDF6;
 
 // Colors
-$primary-color: $green;
-$secondary-color: $blue-dark;
+$primary-color:   $deep-blue;
+$secondary-color: $blended-blue;
 
-$succes-color: $green;
-$warning-color: $orange;
-$danger-color: $red;
+$succes-color:    $meadow-green;
+$danger-color:    $jam-red;
