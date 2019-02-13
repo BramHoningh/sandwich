@@ -4,5 +4,8 @@
 <template>
   <div>
     <h1>Home</h1>
+    <PrimaryButton
+      text="hallo"
+    />
   </div>
 </template>

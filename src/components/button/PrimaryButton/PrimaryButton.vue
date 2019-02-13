@@ -2,7 +2,7 @@
 <script src="./PrimaryButton.js"></script>
 
 <template>
-  <div class="primary-button">
-    <h3>PrimaryButton Component</h3>
-  </div>
+  <button class="button primary-button">
+    <h3>{{ text }}</h3>
+  </button>
 </template>

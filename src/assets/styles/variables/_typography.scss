@@ -1,8 +1,9 @@
 // Typography
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
 // Base Font
-$font-family: 'Roboto', sans-serif;
-$font-family-heading: 'Roboto', sans-serif;
+$font-family: 'Montserrat', sans-serif;
+$font-family-heading: $font-family;
 
 $font-weight: normal;
 $font-size: 1.6rem;
@@ -19,5 +20,5 @@ $font-color: #222;
 
 %heading-style {
   font-family: $font-family-heading;
-	font-weight: bold;
+  font-weight: 700;
 }
