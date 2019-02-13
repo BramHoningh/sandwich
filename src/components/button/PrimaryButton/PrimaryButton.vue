@@ -1,5 +1,5 @@
-<style src="PrimaryButton.scss" lang="scss" scoped></style>
-<script src="PrimaryButton.js"></script>
+<style src="./PrimaryButton.scss" lang="scss" scoped></style>
+<script src="./PrimaryButton.js"></script>
 
 <template>
   <div class="primary-button">
