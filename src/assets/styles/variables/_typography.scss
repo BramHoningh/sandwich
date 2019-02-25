@@ -1,23 +1,25 @@
 // Typography
 
 // Base Font
-$font-family: 'Roboto', sans-serif;
-$font-family-heading: 'Roboto', sans-serif;
+$font-family: 'Montserrat', sans-serif;
+$font-family-heading: 'Montserrat', sans-serif;
 
-$font-weight: normal;
+$font-weight: 400;
 $font-size: 1.6rem;
-$line-height: 1.4;
+$line-height: 1.75;
+$letter-spacing: -0.2px;
 
-$font-color: #222;
+$font-color: $almost-black-4;
 
 // Font Extender
-
 %base-style {
   font: $font-weight #{$font-size}/#{$line-height} $font-family;
+  letter-spacing: $letter-spacing;
   color: $font-color;
 }
 
 %heading-style {
   font-family: $font-family-heading;
-	font-weight: bold;
+  font-weight: 700;
+  color: $almost-black;
 }
