@@ -1,9 +1,13 @@
-import VueTypes from 'vue-types';
-
 export default {
   name: 'Header',
   props: {
-    mobileLogo: VueTypes.string,
-    desktopLogo: VueTypes.string,
+    mobileLogo: {
+      type: String,
+      def: '',
+    },
+    desktopLogo: {
+      type: String,
+      def: '',
+    },
   },
 };
