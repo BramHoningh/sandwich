@@ -3,6 +3,9 @@
 
 <template>
   <div>
-    <h1>Home</h1>
+    <Header
+      mobile-logo="sandwich-glyph"
+      desktop-logo="logo-sandwich"
+    />
   </div>
 </template>
