@@ -4,6 +4,7 @@ import Vue from 'vue';
 import {
   Icon,
   PrimaryButton,
+  Header,
 } from '.';
 
 /**
@@ -11,6 +12,7 @@ import {
  * */
 const components = {
 	PrimaryButton,
+	Header,
   Icon,
 };
 
