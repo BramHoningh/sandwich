@@ -1,5 +1,5 @@
+@import "../modules/mixins";
 // Typography
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
 // Base Font
 $font-family: 'Montserrat', sans-serif;
@@ -21,6 +21,35 @@ $font-color: $almost-black-4;
 
 %heading-style {
   font-family: $font-family-heading;
-  font-weight: 700;
+  font-weight: 800;
   color: $almost-black;
+}
+
+// Heading styles
+h1, h2 ,h3, h4, h5, h6, label {
+  @extend %heading-style;
+}
+
+h1, .heading-01 {
+  font-size: 4.4rem;
+  line-height: 1.14;
+  letter-spacing: -1.8px;
+}
+
+h2, .heading-02 {
+  font-size: 2.8rem;
+  letter-spacing: -0.9px;
+}
+
+@include desktop {
+  h1, .heading-01 {
+    font-size: 7.2rem;
+    line-height: 1.03;
+    letter-spacing: -3.2px;
+  }
+
+  h2, .heading-02 {
+    font-size: 5.8rem;
+    letter-spacing: -1.6px;
+  }
 }
