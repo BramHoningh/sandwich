@@ -3,21 +3,6 @@ body {
   @extend %base-style;
 }
 
-h1, h2 ,h3, h4, h5, h6, label {
-  @extend %heading-style;
-}
-
-h1 {
-  font-size: 4.4rem;
-  line-height: 1.14;
-  letter-spacing: -1.8px;
-}
-
-h2 {
-  font-size: 2.8rem;
-  letter-spacing: -0.9px;
-}
-
 h3 {
   font-size: 1.9rem;
 }
@@ -36,17 +21,6 @@ h4 {
 }
 
 @include desktop {
-  h1 {
-    font-size: 7.2rem;
-    line-height: 1.03;
-    letter-spacing: -3.2px;
-  }
-
-  h2 {
-    font-size: 5.8rem;
-    letter-spacing: -1.6px;
-  }
-
   p {
     line-height: 2;
   }
