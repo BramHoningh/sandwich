@@ -1,4 +1,18 @@
 // DesignSystem SCSS
 .design-system {
-  //
+  .title {
+    display: inline-block;
+    margin-bottom: 1.6rem;
+    border-bottom: 2px solid $almost-black;
+  }
+
+  .color-tile {
+    width: 4rem;
+    height: 4rem;
+
+    &-main {
+      width: 8rem;
+      height: 8rem;
+    }
+  }
 }

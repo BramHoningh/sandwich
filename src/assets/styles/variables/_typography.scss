@@ -41,6 +41,47 @@ h2, .heading-02 {
   letter-spacing: -0.9px;
 }
 
+h3, .heading-03 {
+  font-size: 1.8rem;
+  line-height: 1.33;
+  letter-spacing: -0.2px;
+}
+
+p, .paragraph {
+  font-size: 1.6rem;
+  line-height: 1.75;
+  letter-spacing: -0.2px;
+}
+
+.p-heading-01 {
+  font-size: 1.8rem;
+  line-height: 1.56;
+}
+
+.p-heading-02 {
+  font-size: 1.6rem;
+  line-height: 1.75;
+  letter-spacing: -0.2px;
+}
+
+.sub-text {
+  font-size: 1.2rem;
+  line-height: 1.67;
+  letter-spacing: -0.2px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
 @include desktop {
   h1, .heading-01 {
     font-size: 7.2rem;
@@ -51,5 +92,27 @@ h2, .heading-02 {
   h2, .heading-02 {
     font-size: 5.8rem;
     letter-spacing: -1.6px;
+  }
+
+  h3, .heading-03 {
+    font-size: 3.2rem;
+    letter-spacing: -1.1px;
+  }
+
+  .p-heading-01 {
+    font-size: 2.4rem;
+    line-height: 1.42;
+  }
+
+  .p-heading-02 {
+    font-size: 2.2rem;
+    line-height: 1.55;
+    letter-spacing: -0.3px;
+  }
+
+  .sub-text {
+    font-size: 1.6rem;
+    line-height: 1.63;
+    letter-spacing: -0.2px;
   }
 }
