@@ -4,6 +4,12 @@
 <template>
   <div>
     <h1>Home</h1>
-    <ExampleComponent />
+    <PrimaryButton
+      text="hallo"
+    />
+    <Header
+      mobile-logo="sandwich-glyph"
+      desktop-logo="logo-sandwich"
+    />
   </div>
 </template>

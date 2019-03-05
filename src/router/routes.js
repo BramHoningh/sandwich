@@ -2,9 +2,10 @@
 import { 
   Home, 
   NotFound,
+	DesignSystem,
 } from '@/views';
 
-export default [
+export default [	{		path: '/design-system',		name: 'designSystem',		component: DesignSystem,		meta: {			title: 'Design System',		},	},
   {
     path: '/',
     component: Home,

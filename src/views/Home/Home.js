@@ -1,8 +1,6 @@
-import { ExampleComponent } from '@/components';
+// import { ExampleComponent } from '@/components';
 
 export default {
   name: 'Home',
-  components: {
-    ExampleComponent,
-  },
+  components: {},
 };

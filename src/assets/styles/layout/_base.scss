@@ -3,30 +3,21 @@ body {
   @extend %base-style;
 }
 
-h1, h2 ,h3, h4, h5, h6, label {
-  @extend %heading-style;
+// Viewport classes
+.sw-mobile-only {
+  display: block;
 }
 
-h1 {
-  font-size: 2.4rem;
+.sw-desktop-only {
+  display: none;
 }
 
-h2 {
-  font-size: 2.1rem;
-}
+@include desktop {
+  .sw-mobile-only {
+    display: none;
+  }
 
-h3 {
-  font-size: 1.9rem;
-}
-
-h4 {
-  font-size: 1.6rem;
-}
-
-p {
-  color: lighten( $black, 40% );
-}
-
-a {
-  color: $primary-color;
+  .sw-desktop-only {
+    display: block;
+  }
 }
