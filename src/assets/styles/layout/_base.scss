@@ -3,14 +3,6 @@ body {
   @extend %base-style;
 }
 
-h3 {
-  font-size: 1.9rem;
-}
-
-h4 {
-  font-size: 1.6rem;
-}
-
 // Viewport classes
 .sw-mobile-only {
   display: block;
@@ -21,10 +13,6 @@ h4 {
 }
 
 @include desktop {
-  p {
-    line-height: 2;
-  }
-
   .sw-mobile-only {
     display: none;
   }
