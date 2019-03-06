@@ -11,6 +11,10 @@ export default {
       type: String,
       default: null,
     },
+    display: {
+      type: String,
+      default: 'inline-block',
+    },
     isFullWidth: {
       type: Boolean,
       default: false,
@@ -22,6 +26,22 @@ export default {
     routerLink: {
       type: String,
       default: null,
+    },
+    disabled: {
+      type: Boolean,
+      default: false,
+    },
+  },
+  computed: {
+    buttonState() {
+      if (this.state) {
+        if (this.state === 'active') {
+          return 'state-active';
+        }
+        if (this.state === 'hover') {
+          return 'state-hover';
+        }
+      }
     },
   },
 };
