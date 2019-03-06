@@ -3,6 +3,48 @@ body {
   @extend %base-style;
 }
 
+// Text link
+.text-link {
+  position: relative;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: -0.2px;
+  color: $deep-blue;
+  z-index: 0;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $deep-blue-6;
+    transition: top .2s ease-out, right .2s .3s ease-out, left .2s .3s ease-out, background-color .2s ease-in-out;
+    z-index: -1;
+  }
+
+  &:hover {
+    &:before {
+      top: 0;
+      left: -2px;
+      right: -2px;
+      border-radius: 2px;
+    }
+  }
+
+  &:active {
+    &:before {
+      background-color: $deep-blue-5;
+    }
+  }
+
+  &.disabled {
+    color: $deep-blue-4;
+    pointer-events: none;
+  }
+}
+
 // Viewport classes
 .sw-mobile-only {
   display: block;

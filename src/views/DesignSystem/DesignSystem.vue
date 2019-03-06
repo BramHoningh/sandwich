@@ -17,6 +17,8 @@
     </p>
     <h3>Heading 03</h3>
     <p>This is a paragraph</p>
+    <p>This is a <a href="#" class="text-link">text link</a>.</p>
+    <p>This is a <a href="#" class="text-link disabled">disabled text link</a>.</p>
 
     <h2 class="title">
       Colors
