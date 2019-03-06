@@ -51,5 +51,10 @@
     <div class="color-tile" style="background-color: #43E49D;"></div>
     <div class="color-tile" style="background-color: #A1F2CE;"></div>
     <div class="color-tile" style="background-color: #EDFDF6;"></div>
+
+    <h2 class="title">Buttons</h2><br />
+    <PrimaryButton
+      text="Primary button"
+    />
   </div>
 </template>

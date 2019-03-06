@@ -2,7 +2,17 @@
 <script src="./PrimaryButton.js"></script>
 
 <template>
-  <button class="button primary-button">
-    <h3>{{ text }}</h3>
-  </button>
+  <a v-if="externalLink"
+     :href="externalLink"
+     class="button button-primary"
+  >
+    {{ text }}
+  </a>
+
+  <router-link v-else-if="routerLink"
+               :to="routerLink"
+               class="button button-primary"
+  >
+    {{ text }}
+  </router-link>
 </template>
