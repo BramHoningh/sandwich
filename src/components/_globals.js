@@ -8,12 +8,16 @@ import {
   SecondaryButton,
   TertiaryButton,
   WarningButton,
+  PrimaryIconButton,
+  SecondaryIconButton,
 } from '.';
 
 /**
  *  Register components globally
  * */
 const components = {
+	SecondaryIconButton,
+	PrimaryIconButton,
 	WarningButton,
 	TertiaryButton,
 	SecondaryButton,

@@ -242,5 +242,39 @@
       router-link="/design-system"
       disabled
     />
+    <br>
+    <br>
+    <PrimaryIconButton
+      icon="vue"
+    />
+    <PrimaryIconButton
+      icon="vue"
+      state="hover"
+    />
+    <PrimaryIconButton
+      icon="vue"
+      state="active"
+    />
+    <PrimaryIconButton
+      icon="vue"
+      disabled
+    />
+    <br>
+    <br>
+    <SecondaryIconButton
+      icon="vue"
+    />
+    <SecondaryIconButton
+      icon="vue"
+      state="hover"
+    />
+    <SecondaryIconButton
+      icon="vue"
+      state="active"
+    />
+    <SecondaryIconButton
+      icon="vue"
+      disabled
+    />
   </div>
 </template>
