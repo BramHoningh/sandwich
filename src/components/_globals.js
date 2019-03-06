@@ -5,12 +5,18 @@ import {
   Icon,
   PrimaryButton,
   Header,
+  SecondaryButton,
+  TertiaryButton,
+  WarningButton,
 } from '.';
 
 /**
  *  Register components globally
  * */
 const components = {
+	WarningButton,
+	TertiaryButton,
+	SecondaryButton,
 	PrimaryButton,
 	Header,
   Icon,

@@ -1,6 +1,6 @@
 import AbstractButton from '../AbstractButton';
 
 export default {
-  name: 'PrimaryButton',
+  name: 'WarningButton',
   extends: AbstractButton,
 };

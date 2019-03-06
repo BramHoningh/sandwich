@@ -1,12 +1,12 @@
-<style src="./PrimaryButton.scss" lang="scss" scoped></style>
-<script src="./PrimaryButton.js"></script>
+<style src="./TertiaryButton.scss" lang="scss" scoped></style>
+<script src="./TertiaryButton.js"></script>
 
 <template>
   <a
     v-if="externalLink"
     :href="externalLink"
     :style="{'border-radius': borderRadius, 'display': display}"
-    :class="['primary-button', buttonState, {'disabled': disabled}]"
+    :class="['tertiary-button', buttonState, {'disabled': disabled}]"
   >
     {{ text }}
   </a>
@@ -15,7 +15,7 @@
     v-else-if="routerLink"
     :to="routerLink"
     :style="{'border-radius': borderRadius, 'display': display}"
-    :class="['primary-button', buttonState, {'disabled': disabled}]"
+    :class="['tertiary-button', buttonState, {'disabled': disabled}]"
   >
     {{ text }}
   </router-link>
