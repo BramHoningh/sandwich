@@ -278,5 +278,13 @@
       icon="vue"
       disabled
     />
+    <br>
+    <br>
+    <h2 class="title">Input</h2>
+    <br>
+    <InputField
+      label="label"
+      error-message="Error message"
+    />
   </div>
 </template>

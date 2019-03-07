@@ -10,12 +10,14 @@ import {
   WarningButton,
   PrimaryIconButton,
   SecondaryIconButton,
+  InputField,
 } from '.';
 
 /**
  *  Register components globally
  * */
 const components = {
+	InputField,
 	SecondaryIconButton,
 	PrimaryIconButton,
 	WarningButton,
