@@ -283,10 +283,14 @@
     <h2 class="title">Input</h2>
     <br>
     <InputField
-      v-model="input"
       label="label"
       placeholder="Placeholder"
       error-message="Error message"
+    />
+
+    <RadioInput
+      :items="[{id: 'id-1', value: 1, label: 'Example 1'}, {id: 'id-2', value: 2, label: 'Example 2'}]"
+      name="select-example"
     />
   </div>
 </template>

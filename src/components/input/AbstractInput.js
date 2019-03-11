@@ -4,6 +4,10 @@ export default {
   name: 'AbstractInput',
   extends: AbstractComponent,
   props: {
+    display: {
+      type: String,
+      default: 'inline-block',
+    },
     label: {
       type: String,
       default: '',
@@ -19,6 +23,10 @@ export default {
     type: {
       type: String,
       default: 'text',
+    },
+    name: {
+      type: String,
+      default: '',
     },
     errorMessage: {
       type: String,

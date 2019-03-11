@@ -1,3 +1,4 @@
+export { default as RadioInput } from './input/RadioInput';
 export { default as InputField } from './input/InputField';
 export { default as SecondaryIconButton } from './button/SecondaryIconButton';
 export { default as PrimaryIconButton } from './button/PrimaryIconButton';
