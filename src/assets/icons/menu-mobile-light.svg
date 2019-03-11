@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>icon/24x/menu-mobile-light</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/24x/menu-mobile-light" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon/24x/menu-mobile" fill-rule="nonzero">
+            <g id="icon/24x/filter">
+                <rect id="mask" x="0" y="0" width="24" height="24"></rect>
+            </g>
+            <path d="M2.5,11 L21.5,11 C21.7761424,11 22,11.2238576 22,11.5 L22,12.5 C22,12.7761424 21.7761424,13 21.5,13 L2.5,13 C2.22385763,13 2,12.7761424 2,12.5 L2,11.5 C2,11.2238576 2.22385763,11 2.5,11 Z M12.5,5 L21.5,5 C21.7761424,5 22,5.22385763 22,5.5 L22,6.5 C22,6.77614237 21.7761424,7 21.5,7 L12.5,7 C12.2238576,7 12,6.77614237 12,6.5 L12,5.5 C12,5.22385763 12.2238576,5 12.5,5 Z M2.5,17 L11.5,17 C11.7761424,17 12,17.2238576 12,17.5 L12,18.5 C12,18.7761424 11.7761424,19 11.5,19 L2.5,19 C2.22385763,19 2,18.7761424 2,18.5 L2,17.5 C2,17.2238576 2.22385763,17 2.5,17 Z" id="menu-icon" fill="#FFFFFF" transform="translate(12.000000, 12.000000) rotate(-360.000000) translate(-12.000000, -12.000000) "></path>
+        </g>
+    </g>
+</svg>

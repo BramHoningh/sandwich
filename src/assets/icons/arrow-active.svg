@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>icon/24x/arrow-active</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/24x/arrow-active" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g fill-rule="nonzero">
+            <rect id="mask" x="0" y="0" width="24" height="24"></rect>
+            <rect id="mask" x="0" y="4" width="24" height="16"></rect>
+            <rect id="mask" x="0" y="4" width="16" height="16"></rect>
+            <polyline id="Path" stroke="#142FDD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="16 5 23 12 16 19"></polyline>
+            <path d="M23,12 L1,12" id="Path-2" stroke="#142FDD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>

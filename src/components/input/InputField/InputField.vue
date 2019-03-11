@@ -6,11 +6,14 @@
     <div class="input-label">{{ label }}</div>
     <input
       :type="type"
+      :value="value"
+      :placeholder="placeholder"
       :style="{'border-radius': borderRadius}"
-      class="input-field"
+      :class="['input-field', {'input-field-error': hasError}]"
+      @input="handleInput"
     >
-    <div class="input-error-wrapper">
-      <Icon name="vue" />
+    <div v-if="hasError" class="input-error-wrapper">
+      <Icon name="error" />
       <div class="error-message">
         {{ errorMessage }}
       </div>

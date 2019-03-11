@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>icon/24x/error/default</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M13.4161506,4.41651608 L19.5838494,10.5844619 C20.3671375,11.3677813 20.3659678,12.6346542 19.5838494,13.4167144 L13.4161506,19.5839547 C12.6328625,20.3671845 11.3659678,20.3660149 10.5838494,19.5839547 L4.41615055,13.4167144 C3.63286252,12.6334846 3.6340322,11.3666116 4.41615055,10.5844619 L10.5838494,4.41651608 C11.3671375,3.63319669 12.6340322,3.63436641 13.4161506,4.41651608 Z M12,14 C12.552,14 13,13.552 13,13 L13,8 C13,7.448 12.552,7 12,7 C11.448,7 11,7.448 11,8 L11,13 C11,13.552 11.448,14 12,14 Z M12,17 C12.552,17 13,16.552 13,16 C13,15.448 12.552,15 12,15 C11.448,15 11,15.448 11,16 C11,16.552 11.448,17 12,17 Z" id="path-1"></path>
+    </defs>
+    <g id="icon/24x/error/default" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Combined-Shape" fill="#686B7C" xlink:href="#path-1"></use>
+    </g>
+</svg>

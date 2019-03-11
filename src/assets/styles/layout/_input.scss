@@ -20,6 +20,13 @@
     color: $almost-black-3;
     border: 1px solid $almost-black-5;
     box-shadow: inset 0 1px 2px 0 rgba(4, 8, 37, 0.08), inset 2px 2px 4px 0 rgba(4, 8, 37, 0.04);
+    @include placeholder {
+      color: $almost-black-5;
+    }
+
+    &-error {
+      color: $jam-red;
+    }
   }
 
   .input-error-wrapper {
@@ -27,7 +34,6 @@
     bottom: 0;
     left: 0.8rem;
     display: flex;
-    align-items: bottom;
     width: calc(100% - 0.8rem);
     height: 2.4rem;
 

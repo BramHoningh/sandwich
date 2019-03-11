@@ -6,14 +6,14 @@ export default {
   props: {
     label: {
       type: String,
-      default: null,
+      default: '',
     },
     placeholder: {
       type: String,
       default: '',
     },
     value: {
-      type: String,
+      type: null, // Any type
       default: '',
     },
     type: {
@@ -27,6 +27,11 @@ export default {
     hasError: {
       type: Boolean,
       default: false,
+    },
+  },
+  methods: {
+    handleInput(event) {
+      this.$emit('input', event.target.value);
     },
   },
 };

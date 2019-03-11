@@ -47,21 +47,13 @@ h3, .heading-03 {
   letter-spacing: -0.2px;
 }
 
-p, .paragraph {
-  font-size: 1.6rem;
-  line-height: 1.75;
-  letter-spacing: -0.2px;
+p, .paragraph, .p-heading-02 {
+  @extend %base-style;
 }
 
 .p-heading-01 {
   font-size: 1.8rem;
   line-height: 1.56;
-}
-
-.p-heading-02 {
-  font-size: 1.6rem;
-  line-height: 1.75;
-  letter-spacing: -0.2px;
 }
 
 .sub-text {

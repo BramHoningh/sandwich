@@ -283,7 +283,9 @@
     <h2 class="title">Input</h2>
     <br>
     <InputField
+      v-model="input"
       label="label"
+      placeholder="Placeholder"
       error-message="Error message"
     />
   </div>
