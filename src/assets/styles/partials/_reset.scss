@@ -123,11 +123,9 @@ table {
 }
 input, textarea, select, button {
     border-radius: 0;
-    -webkit-appearance: none;
     &:focus {
         outline: none;
         border: 1px solid #ccc;
-        -webkit-appearance: none;
     }
 }
 input {

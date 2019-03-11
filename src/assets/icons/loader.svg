@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>icon/16x/profile/loader</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/16x/profile/loader" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="upload-left" fill-rule="nonzero" cx="8" cy="8" r="4"></circle>
+        <path d="M8,12 C10.209139,12 12,10.209139 12,8 C12,5.790861 10.209139,4 8,4 C5.790861,4 4,5.790861 4,8 C4,10.209139 5.790861,12 8,12 Z" id="upload-done" stroke="#142FDD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="16" fill-rule="nonzero"></path>
+    </g>
+</svg>
