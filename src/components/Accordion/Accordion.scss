@@ -1,0 +1,41 @@
+// Accordion SCSS
+.accordion {
+  width: 100%;
+  border-top: 1px solid $almost-black-6;
+
+  &-item {
+    background-color: $white;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+    .title-wrapper {
+      display: flex;
+      justify-content: space-between;
+      padding: 2.4rem;
+      border-bottom: 1px solid $almost-black-6;
+
+      .title {
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 1.33;
+        letter-spacing: -0.2px;
+        color: $almost-black;
+      }
+    }
+
+    .content-wrapper {
+      overflow: hidden;
+      height: 0;
+      border-bottom: 1px solid $almost-black-6;
+      transition: height .3s ease-out;
+
+      .content {
+        padding: 2.4rem;
+        font-size: 1.8rem;
+        line-height: 1.33;
+        letter-spacing: -0.2px;
+        color: $almost-black-4;
+      }
+    }
+  }
+}

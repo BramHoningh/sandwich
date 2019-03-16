@@ -1,3 +1,4 @@
+export { default as Accordion } from './Accordion';
 export { default as RadioInput } from './input/RadioInput';
 export { default as InputField } from './input/InputField';
 export { default as SecondaryIconButton } from './button/SecondaryIconButton';

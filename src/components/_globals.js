@@ -12,12 +12,14 @@ import {
   SecondaryIconButton,
   InputField,
   RadioInput,
+  Accordion,
 } from '.';
 
 /**
  *  Register components globally
  * */
 const components = {
+	Accordion,
 	RadioInput,
 	InputField,
 	SecondaryIconButton,

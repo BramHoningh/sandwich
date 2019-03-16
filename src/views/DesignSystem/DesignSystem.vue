@@ -17,8 +17,22 @@
     </p>
     <h3>Heading 03</h3>
     <p>This is a paragraph</p>
-    <p>This is a <a href="#" class="text-link">text link</a>.</p>
-    <p>This is a <a href="#" class="text-link disabled">disabled text link</a>.</p>
+    <p>
+      This is a <a
+        href="#"
+        class="text-link"
+      >
+        text link
+      </a>.
+    </p>
+    <p>
+      This is a <a
+        href="#"
+        class="text-link disabled"
+      >
+        disabled text link
+      </a>.
+    </p>
 
     <h2 class="title">
       Colors
@@ -280,9 +294,12 @@
     />
     <br>
     <br>
-    <h2 class="title">Input</h2>
+    <h2 class="title">
+      Input
+    </h2>
     <br>
     <InputField
+      :has-error="true"
       label="label"
       placeholder="Placeholder"
       error-message="Error message"
@@ -291,6 +308,10 @@
     <RadioInput
       :items="[{id: 'id-1', value: 1, label: 'Example 1'}, {id: 'id-2', value: 2, label: 'Example 2'}]"
       name="select-example"
+    />
+
+    <Accordion
+      :items="[{title: 'First item', content: 'This is a first <a href=\'#\'>link</a> sdfdsfksjdf sdkjfls fjslfjdksl fjsdklfj sdklfjdsk lfjlksd fjklsd jfldsjfksdjfldsjf sdfjf kdsjfksdjlf'}, {title: 'Second item', content: 'This is a second <a href=\'#\'>link</a>'}]"
     />
   </div>
 </template>
