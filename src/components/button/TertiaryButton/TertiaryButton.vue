@@ -6,7 +6,7 @@
     v-if="externalLink"
     :href="externalLink"
     :style="{'border-radius': borderRadius, 'display': display}"
-    :class="['tertiary-button', buttonState, {'disabled': disabled}]"
+    :class="['sw-tertiary-button', buttonState, {'disabled': disabled}]"
   >
     {{ text }}
   </a>
@@ -15,7 +15,7 @@
     v-else-if="routerLink"
     :to="routerLink"
     :style="{'border-radius': borderRadius, 'display': display}"
-    :class="['tertiary-button', buttonState, {'disabled': disabled}]"
+    :class="['sw-tertiary-button', buttonState, {'disabled': disabled}]"
   >
     {{ text }}
   </router-link>

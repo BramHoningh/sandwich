@@ -1,8 +1,8 @@
 // Button styling
 %button {
   position: relative;
-  padding: 1.6rem 3.2rem;
-  font-size: 1.6rem;
+  padding: 16px 32px;
+  font-size: 16px;
   font-weight: 600;
   line-height: normal;
   letter-spacing: normal;
@@ -52,8 +52,8 @@
 %icon-button {
   @extend %button;
   padding: 0;
-  width: 4.8rem;
-  height: 4.8rem;
+  width: 48px;
+  height: 48px;
   border-radius: 100%;
 
   &:before, &:after {
@@ -65,8 +65,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 2.4rem;
-    height: 2.4rem;
+    width: 24px;
+    height: 24px;
 
     svg {
       width: 100%;
@@ -75,7 +75,7 @@
 }
 
 // Text Buttons
-.primary-button {
+.sw-primary-button {
   @extend %button;
   box-shadow: 0 2px 8px 0 rgba(4, 8, 37, 0.12), 0 2px 8px 0 rgba(20, 47, 221, 0.08);
   background-image: linear-gradient(to bottom, $deep-blue, $deep-blue-2);
@@ -98,7 +98,7 @@
   }
 }
 
-.secondary-button {
+.sw-secondary-button {
   @extend %button;
   color: $deep-blue;
   border-color: $almost-black-5;
@@ -118,7 +118,7 @@
   }
 }
 
-.tertiary-button {
+.sw-tertiary-button {
   @extend %button;
   box-shadow: 0 2px 8px 0 rgba(4, 8, 37, 0.12), 0 2px 8px 0 rgba(20, 182, 221, 0.08);
   background-image: linear-gradient(to bottom, $blended-blue, $blended-blue-2);
@@ -141,7 +141,7 @@
   }
 }
 
-.warning-button {
+.sw-warning-button {
   @extend %button;
   box-shadow: 0 2px 8px 0 rgba(4, 8, 37, 0.12), 0 2px 8px 0 rgba(221, 20, 96, 0.08);
   background-image: linear-gradient(to bottom, $jam-red, $jam-red-2);
@@ -165,7 +165,7 @@
 }
 
 // Icon Buttons
-.primary-icon-button {
+.sw-primary-icon-button {
   @extend %icon-button;
   box-shadow: 0 2px 8px 0 rgba(4, 8, 37, 0.12), 0 2px 8px 0 rgba(20, 47, 221, 0.08);
   background-image: linear-gradient(to bottom, $deep-blue, $deep-blue-2);
@@ -187,7 +187,7 @@
   }
 }
 
-.secondary-icon-button {
+.sw-secondary-icon-button {
   @extend %icon-button;
   box-shadow: 0 2px 8px 0 rgba(20, 182, 221, 0.08);
   background-color: $white;

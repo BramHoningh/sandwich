@@ -1,5 +1,17 @@
 {
   "name": "vue-sandwich",
+  "description": "A Vue component library based on the Sandwich Design System.",
+  "author": "Pixeldenker <bram@pixeldenker.nl>",
+  "keywords": [
+    "component",
+    "library",
+    "vue",
+    "sandwich"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pixeldenker/sandwich"
+  },
   "version": "0.0.6",
   "main": "./dist/sandwich.common.js",
   "scripts": {

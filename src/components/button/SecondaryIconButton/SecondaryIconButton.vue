@@ -4,7 +4,7 @@
 <template>
   <div
     :style="{'border-radius': borderRadius, 'display': display}"
-    :class="['secondary-icon-button', buttonState, {'disabled': disabled}]"
+    :class="['sw-secondary-icon-button', buttonState, {'disabled': disabled}]"
   >
     <Icon
       :name="icon"

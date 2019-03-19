@@ -2,24 +2,25 @@
 <script src="./Accordion.js"></script>
 
 <template>
-  <div class="accordion">
+  <div class="sw-accordion">
     <div
       v-for="(item, index) in items"
-      class="accordion-item"
+      :key="index"
+      class="sw-accordion-item"
       @click="setActive(index)"
     >
-      <div class="title-wrapper">
-        <div class="title">
+      <div class="sw-title-wrapper">
+        <div class="sw-title">
           {{ item.title }}
         </div>
         <Icon :name="getDropdownIcon(index)" />
       </div>
       <div
         ref="accordionContent"
-        :class="['content-wrapper']"
+        :class="['sw-content-wrapper']"
       >
         <div
-          class="content"
+          class="sw-content"
           v-html="item.content"
         />
       </div>

@@ -1,5 +1,5 @@
 // Accordion SCSS
-.accordion {
+.sw-accordion {
   width: 100%;
   border-top: 1px solid $almost-black-6;
 
@@ -8,14 +8,14 @@
     cursor: pointer;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 
-    .title-wrapper {
+    .sw-title-wrapper {
       display: flex;
       justify-content: space-between;
-      padding: 2.4rem;
+      padding: 24px;
       border-bottom: 1px solid $almost-black-6;
 
-      .title {
-        font-size: 1.8rem;
+      .sw-title {
+        font-size: 18px;
         font-weight: 500;
         line-height: 1.33;
         letter-spacing: -0.2px;
@@ -23,15 +23,15 @@
       }
     }
 
-    .content-wrapper {
+    .sw-content-wrapper {
       overflow: hidden;
       height: 0;
       border-bottom: 1px solid $almost-black-6;
       transition: height .3s ease-out;
 
-      .content {
-        padding: 2.4rem;
-        font-size: 1.8rem;
+      .sw-content {
+        padding: 24px;
+        font-size: 18px;
         line-height: 1.33;
         letter-spacing: -0.2px;
         color: $almost-black-4;
