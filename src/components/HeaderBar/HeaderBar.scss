@@ -3,14 +3,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2.4rem;
-  height: 6.4rem;
+  padding: 0 24px;
+  height: 64px;
   background-color: $white;
   box-shadow: 0 4px 8px -2px rgba(4, 8, 37, 0.04);
 
   &-logo {
-    width: 2.4rem;
-    height: 2.4rem;
+    width: 24px;
+    height: 24px;
 
     .icon {
       width: 100%;
@@ -54,14 +54,14 @@
 
 @include desktop {
   .sw-header {
-    height: 9.6rem;
-    padding: 0 6.4rem;
+    height: 96px;
+    padding: 0 64px;
 
     &-logo {
       width: 100%;
-      max-width: 18.4rem;
+      max-width: 184px;
       height: auto;
-      max-height: 3.2rem;
+      max-height: 32px;
     }
   }
 }
