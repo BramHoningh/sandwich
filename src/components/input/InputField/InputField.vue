@@ -2,19 +2,19 @@
 <script src="./InputField.js"></script>
 
 <template>
-  <div class="input-wrapper">
-    <div class="input-label">{{ label }}</div>
+  <div class="sw-input-wrapper">
+    <div class="sw-input-label">{{ label }}</div>
     <input
       :type="type"
       :value="value"
       :placeholder="placeholder"
       :style="{'border-radius': borderRadius}"
-      :class="['input-field', {'input-field-error': hasError}]"
+      :class="['sw-input-field', {'sw-input-field-error': hasError}]"
       @input="handleInput"
     >
-    <div v-if="hasError" class="input-error-wrapper">
+    <div v-if="hasError" class="sw-input-error-wrapper">
       <Icon name="error" />
-      <div class="error-message">
+      <div class="sw-error-message">
         {{ errorMessage }}
       </div>
     </div>

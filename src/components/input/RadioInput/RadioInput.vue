@@ -2,17 +2,17 @@
 <script src="./RadioInput.js"></script>
 
 <template>
-  <div class="radio-input">
+  <div class="sw-radio-input">
     <div
       v-for="(item, index) in items"
       :key="index"
       :style="{'display': display}"
-      class="input-wrapper input-wrapper-radio"
+      class="sw-input-wrapper sw-input-wrapper-radio"
     >
       <label
         :for="item.id"
         :style="{'border-radius': borderRadius}"
-        :class="['wrapper-label', {'selected': radioInput === item.value}]"
+        :class="['sw-wrapper-label', {'selected': radioInput === item.value}]"
       >
         <input
           :id="item.id"
@@ -23,7 +23,7 @@
           @input="handleInput"
         >
 
-        <span class="input-label">
+        <span class="sw-input-label">
           {{ item.label }}
         </span>
       </label>
