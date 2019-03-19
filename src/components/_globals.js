@@ -13,12 +13,14 @@ import {
   InputField,
   RadioInput,
   Accordion,
+  HeaderBar,
 } from '.';
 
 /**
  *  Register components globally
  * */
 const components = {
+	HeaderBar,
 	Accordion,
 	RadioInput,
 	InputField,
