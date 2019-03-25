@@ -15,11 +15,18 @@
       border-bottom: 1px solid $almost-black-6;
 
       .sw-title {
+        width: 100%;
         font-size: 18px;
         font-weight: 500;
         line-height: 1.33;
         letter-spacing: -0.2px;
         color: $almost-black;
+
+        a {
+          display: block;
+          text-decoration: none;
+          color: inherit;
+        }
       }
     }
 
@@ -35,6 +42,15 @@
         line-height: 1.33;
         letter-spacing: -0.2px;
         color: $almost-black-4;
+
+        &:not(:first-of-type) {
+          border-top: 1px solid $almost-black-6;
+        }
+
+        a {
+          text-decoration: none;
+          color: $almost-black-4;
+        }
       }
     }
   }

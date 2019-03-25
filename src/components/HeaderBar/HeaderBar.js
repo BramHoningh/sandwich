@@ -9,6 +9,12 @@ export default {
       type: String,
       default: 'logo-sandwich',
     },
+    desktopItems: {
+      type: Array,
+    },
+    mobileItems: {
+      type: Array,
+    },
   },
   data() {
     return {

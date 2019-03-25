@@ -315,7 +315,8 @@
     />
 
     <HeaderBar
-
+      :desktop-items="[{title: 'Explore', type: 'link', href: '#'}, {title: 'Community', type: 'link', href: '#'}, {title: 'Login', type: 'secondary-button'}]"
+      :mobile-items="[{title: 'Company', subItems: [{title: 'Homepage', href: '#', tag: 'NEW', tagType: 'primary'}, {title: 'Become a host', href: '#'}]}, {title: 'Test', href: '#'}]"
     />
   </div>
 </template>
