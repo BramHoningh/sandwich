@@ -1,0 +1,107 @@
+// DropdownSearch SCSS
+.dropdown-search {
+
+  .dropdown-arrow-wrapper {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 36px;
+    height: 100%;
+    z-index: 100;
+
+    .dropdown-arrow {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-40%);
+      z-index: 100;
+    }
+  }
+
+  .dropdown-search-field {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 280px;
+    background-color: $almost-black-7;
+    border: 1px solid $almost-black-5;
+    box-sizing: border-box;
+
+    &-inner {
+      display: flex;
+      align-items: center;
+      padding: 4px;
+      width: 100%;
+      min-height: 47px;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      box-sizing: border-box;
+    }
+
+    .spacing-right {
+      padding: 2px 20px;
+    }
+
+    &-item {
+      display: inherit;
+      border-radius: 2px;
+
+      &:not(:first-of-type) {
+        margin-left: 4px;
+      }
+
+      .item-name {
+        position: relative;
+        padding: 10px 40px 10px 8px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -0.5px;
+        color: $blended-blue;
+        background-color: $blended-blue-5;
+        border-radius: 2px;
+
+        .close-item {
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 24px;
+          height: 100%;
+          background-color: $blended-blue-4;
+          border-top-right-radius: 2px;
+          border-bottom-right-radius: 2px;
+
+          .icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+
+      //.close-item {
+      //  position: relative;
+      //  display: inline-block;
+      //  margin-top: -2px;
+      //  width: 24px;
+      //  height: 39px;
+      //  vertical-align: middle;
+      //  background-color: $blended-blue-4;
+      //  border-top-right-radius: 2px;
+      //  border-bottom-right-radius: 2px;
+      //  cursor: pointer;
+      //
+      //  .icon-in {
+      //    position: absolute;
+      //    top: 45%;
+      //    left: 50%;
+      //    transform: translate(-50%, -50%);
+      //    width: 16px;
+      //    height: 16px;
+      //  }
+      //}
+    }
+  }
+}
