@@ -1,4 +1,214 @@
 // Button styling
-.button {
+%button {
+  position: relative;
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: normal;
+  text-decoration: none;
+  color: $white;
+  background-color: $white;
+  border: 1px solid rgba(4, 8, 37, 0.08);
+  transition: border-color .5s ease-in-out;
+  z-index: 100;
   cursor: pointer;
+
+  &:focus {
+    border: 1px solid rgba(4, 8, 37, 0.08);
+  }
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -100;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+  }
+
+  &:hover, &.state-hover {
+    &:before {
+      opacity: 1;
+    }
+  }
+
+  &:active, &.state-active {
+    &:after {
+      opacity: 1;
+    }
+  }
+
+
+  &.disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+}
+
+%icon-button {
+  @extend %button;
+  padding: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+
+  &:before, &:after {
+    border-radius: 100%;
+  }
+
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 24px;
+
+    svg {
+      width: 100%;
+    }
+  }
+}
+
+// Text Buttons
+.sw-primary-button {
+  @extend %button;
+  box-shadow: 0 2px 8px 0 rgba(4, 8, 37, 0.12), 0 2px 8px 0 rgba(20, 47, 221, 0.08);
+  background-image: linear-gradient(to bottom, $deep-blue, $deep-blue-2);
+
+  &:before {
+    box-shadow: 0 2px 12px 0 rgba(4, 8, 37, 0.12), 0 2px 8px 0 rgba(20, 47, 221, 0.24), 0 2px 4px 0 rgba(4, 8, 37, 0.12);
+    background-image: linear-gradient(to top, $deep-blue, $deep-blue-2);
+  }
+
+  &:after {
+    box-shadow: 0 2px 8px 0 rgba(4, 8, 37, 0.12), 0 2px 8px 0 rgba(20, 47, 221, 0.08);
+    background-color: $deep-blue;
+  }
+
+  &.disabled {
+    color: $deep-blue-6;
+    box-shadow: 0 2px 8px 0 rgba(20, 47, 221, 0.08);
+    background-image: none;
+    background-color: $deep-blue-4;
+  }
+}
+
+.sw-secondary-button {
+  @extend %button;
+  color: $deep-blue;
+  border-color: $almost-black-5;
+  box-shadow: 0 2px 8px 0 rgba(20, 182, 221, 0.08);
+
+  &:hover, &:focus, &.state-hover {
+    border-color: $almost-black-4;
+  }
+
+  &:active, &.state-active {
+    border-color: $deep-blue-4;
+    box-shadow: 0 2px 8px 0 rgba(20, 182, 221, 0.08);
+  }
+
+  &.disabled {
+    color: $deep-blue-4;
+  }
+}
+
+.sw-tertiary-button {
+  @extend %button;
+  box-shadow: 0 2px 8px 0 rgba(4, 8, 37, 0.12), 0 2px 8px 0 rgba(20, 182, 221, 0.08);
+  background-image: linear-gradient(to bottom, $blended-blue, $blended-blue-2);
+
+  &:before {
+    box-shadow: 0 2px 12px 0 rgba(4, 8, 37, 0.12), 0 2px 8px 0 rgba(20, 182, 221, 0.24), 0 2px 4px 0 rgba(4, 8, 37, 0.12);
+    background-image: linear-gradient(to top, $blended-blue, $blended-blue-2);
+  }
+
+  &:after {
+    box-shadow: 0 2px 8px 0 rgba(4, 8, 37, 0.12), 0 2px 8px 0 rgba(20, 182, 221, 0.08);
+    background-color: $blended-blue;
+  }
+
+  &.disabled {
+    color: $blended-blue-6;
+    background-image: none;
+    background-color: $blended-blue-4;
+    box-shadow: 0 2px 8px 0 rgba(20, 182, 221, 0.08);
+  }
+}
+
+.sw-warning-button {
+  @extend %button;
+  box-shadow: 0 2px 8px 0 rgba(4, 8, 37, 0.12), 0 2px 8px 0 rgba(221, 20, 96, 0.08);
+  background-image: linear-gradient(to bottom, $jam-red, $jam-red-2);
+
+  &:before {
+    box-shadow: 0 2px 12px 0 rgba(4, 8, 37, 0.12), 0 2px 8px 0 rgba(221, 20, 96, 0.24), 0 2px 4px 0 rgba(4, 8, 37, 0.12);
+    background-image: linear-gradient(to top, $jam-red, $jam-red-2);
+  }
+
+
+  &:after {
+    box-shadow: 0 2px 8px 0 rgba(4, 8, 37, 0.12), 0 2px 8px 0 rgba(20, 182, 221, 0.08);
+    background-color: $jam-red;
+  }
+
+  &.disabled {
+    background-image: none;
+    background-color: $jam-red-3;
+    box-shadow: 0 2px 8px 0 rgba(20, 182, 221, 0.08);
+  }
+}
+
+// Icon Buttons
+.sw-primary-icon-button {
+  @extend %icon-button;
+  box-shadow: 0 2px 8px 0 rgba(4, 8, 37, 0.12), 0 2px 8px 0 rgba(20, 47, 221, 0.08);
+  background-image: linear-gradient(to bottom, $deep-blue, $deep-blue-2);
+
+  &:before {
+    box-shadow: 0 2px 12px 0 rgba(4, 8, 37, 0.12), 0 2px 8px 0 rgba(20, 47, 221, 0.24), 0 2px 4px 0 rgba(4, 8, 37, 0.12);
+    background-image: linear-gradient(to top, $deep-blue, $deep-blue-2);
+  }
+
+  &:after {
+    box-shadow: 0 2px 8px 0 rgba(4, 8, 37, 0.12), 0 2px 8px 0 rgba(20, 47, 221, 0.08);
+    background-color: $deep-blue;
+  }
+
+  &.disabled {
+    background-image: none;
+    background-color: $deep-blue-4;
+    box-shadow: 0 2px 8px 0 rgba(20, 47, 221, 0.08);
+  }
+}
+
+.sw-secondary-icon-button {
+  @extend %icon-button;
+  box-shadow: 0 2px 8px 0 rgba(20, 182, 221, 0.08);
+  background-color: $white;
+  border-color: $almost-black-5;
+
+  &:hover, &:focus, &.state-hover {
+    box-shadow: 0 2px 8px 0 rgba(20, 182, 221, 0.08);
+    border-color: $almost-black-4;
+  }
+
+  &:active, &.state-active {
+    box-shadow: 0 2px 8px 0 rgba(20, 182, 221, 0.08);
+    border-color: $deep-blue-4;
+  }
+
+  &.disabled {
+    box-shadow: 0 2px 8px 0 rgba(20, 182, 221, 0.08);
+    border-color: $almost-black-5;
+
+    .icon {
+      opacity: 0.35;
+    }
+  }
 }

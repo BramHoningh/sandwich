@@ -1,6 +1,6 @@
-import AbstractButtonComponent from '../AbstractButtonComponent';
+import AbstractButton from '../AbstractButton';
 
 export default {
   name: 'PrimaryButton',
-  extends: AbstractButtonComponent,
+  extends: AbstractButton,
 };

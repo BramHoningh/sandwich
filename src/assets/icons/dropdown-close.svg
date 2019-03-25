@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>icon/16x/input/dropdown-close</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/16x/input/dropdown-close" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M3.38802817,7.11112202 L7.27690139,10.711109 C7.69299941,11.096297 8.30700059,11.096297 8.72309861,10.711109 L12.6119718,7.11112202 C13.0778876,6.67981701 13.1318446,5.92225977 12.7324883,5.41907059 C12.3331319,4.9158814 11.6316903,4.85760777 11.1657746,5.28891279 L7.27690139,8.88889973 L8.72309861,8.88889973 L4.83422539,5.28891279 C4.36830967,4.85760777 3.66686807,4.9158814 3.26751173,5.41907059 C2.86815539,5.92225977 2.92211244,6.67981701 3.38802817,7.11112202 L3.38802817,7.11112202 Z" id="chevron" fill="#686B7C" fill-rule="nonzero" transform="translate(8.000000, 8.000000) rotate(-180.000000) translate(-8.000000, -8.000000) "></path>
+    </g>
+</svg>

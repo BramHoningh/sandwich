@@ -1,0 +1,128 @@
+// HeaderBar SCSS
+.sw-header-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.sw-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  height: 64px;
+  background-color: $white;
+  box-shadow: 0 4px 8px -2px rgba(4, 8, 37, 0.04);
+
+  &-logo {
+    width: 24px;
+    height: 24px;
+
+    .icon {
+      width: 100%;
+    }
+  }
+
+  &-icon-wrapper {
+    position: relative;
+    width: 26px;
+    height: 24px;
+    cursor: pointer;
+  }
+
+  &-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 22px;
+    height: 3px;
+    background-color: $almost-black-3;
+    border-radius: 2px;
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      width: 50%;
+      height: 3px;
+      background-color: $almost-black-3;
+      border-radius: 2px;
+      transition: width .3s ease-out;
+    }
+
+    &:before {
+      top: -6px;
+      right: 0;
+    }
+
+    &:after {
+      bottom: -6px;
+      left: 0;
+    }
+
+    &.active {
+      &:before, &:after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.sw-mobile-items {
+  position: fixed;
+  top: 64px;
+  left: 0;
+  right: 0;
+  height: 0;
+  background-color: $white;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+  transition: height .3s ease-out, opacity .3s ease-out, visibility .3s ease-out;
+
+  &.active {
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@include desktop {
+  .sw-header {
+    height: 96px;
+    padding: 0 64px;
+
+    &-logo {
+      width: 100%;
+      max-width: 184px;
+      height: auto;
+      max-height: 32px;
+    }
+
+    .sw-desktop-items {
+      display: flex;
+      align-items: center;
+
+      .sw-desktop-item {
+        &-link {
+          font-weight: 600;
+          text-decoration: none;
+          line-height: normal;
+          letter-spacing: normal;
+          color: $almost-black-2;
+          transition: color .3s ease-out;
+
+          &:hover {
+            color: $deep-blue;
+          }
+        }
+
+        &:not(:first-of-type) {
+          margin-left: 16px;
+        }
+      }
+    }
+  }
+}

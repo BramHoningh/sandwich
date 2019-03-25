@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>icon/16x/chat/delivered</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/16x/chat/delivered" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <rect id="Rectangle" fill-rule="nonzero" x="0" y="0" width="16" height="16"></rect>
+            <path d="M6.98771202,10.987712 C6.72251721,10.9876554 6.46820475,10.8822614 6.28071202,10.694712 L4.28071202,8.69471202 C3.90173981,8.30233313 3.90715965,7.67862724 4.29289345,7.29289345 C4.67862724,6.90715965 5.30233313,6.90173981 5.69471202,7.28071202 L6.98771202,8.57371202 L10.280712,5.28071202 C10.6730909,4.90173981 11.2967968,4.90715965 11.6825306,5.29289345 C12.0682644,5.67862724 12.0736842,6.30233313 11.694712,6.69471202 L7.69471202,10.694712 C7.50721929,10.8822614 7.25290683,10.9876554 6.98771202,10.987712 Z" id="message_2_accept-path" fill="#9A9CA8"></path>
+        </g>
+    </g>
+</svg>
