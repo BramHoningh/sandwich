@@ -3,6 +3,15 @@ import AbstractComponent from '../AbstractComponent';
 export default {
   name: 'DropdownSearch',
   extends: AbstractComponent,
+  props: {
+    errorMessage: {
+      type: String,
+    },
+    hasError: {
+      type: Boolean,
+      default: false,
+    },
+  },
   data() {
     return {
       isOpen: false,
@@ -17,6 +26,11 @@ export default {
         },
       ],
     };
+  },
+  computed: {
+    closeIcon() {
+      return this.hasError ? 'close-error' : 'close-blended';
+    },
   },
   methods: {
     toggleDropdown() {

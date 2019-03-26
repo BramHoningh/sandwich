@@ -1,5 +1,7 @@
 // DropdownSearch SCSS
 .dropdown-search {
+  position: relative;
+  padding: 24px 0;
 
   .dropdown-arrow-wrapper {
     position: absolute;
@@ -27,6 +29,19 @@
     background-color: $almost-black-7;
     border: 1px solid $almost-black-5;
     box-sizing: border-box;
+
+    &.has-error {
+      .dropdown-search-field-item {
+        .item-name {
+          color: $jam-red;
+          background-color: $jam-red-4;
+
+          .close-item {
+            background-color: $jam-red-3;
+          }
+        }
+      }
+    }
 
     &-inner {
       display: flex;

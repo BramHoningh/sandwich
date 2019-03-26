@@ -5,7 +5,7 @@
   <div class="dropdown-search">
     <div
       :style="{'border-radius': borderRadius}"
-      class="dropdown-search-field"
+      :class="['dropdown-search-field', {'has-error': hasError}]"
       @click="toggleDropdown"
     >
       <div class="dropdown-arrow-wrapper">
@@ -29,14 +29,23 @@
               @click="removeItem(item.value)"
             >
               <Icon
+                :name="closeIcon"
                 class="icon-in"
-                name="close-blended"
               />
             </span>
           </span>
         </div>
 
         <div class="spacing-right" />
+      </div>
+    </div>
+    <div
+      v-if="hasError"
+      class="sw-input-error-wrapper"
+    >
+      <Icon name="error" />
+      <div class="sw-error-message">
+        {{ errorMessage }}
       </div>
     </div>
   </div>

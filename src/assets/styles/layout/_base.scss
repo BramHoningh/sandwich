@@ -52,6 +52,27 @@ p, .paragraph, .p-heading-02 {
   text-align: right;
 }
 
+.sw-input-error-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 8px;
+  display: flex;
+  width: calc(100% - 8px);
+  height: 24px;
+
+  .icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .sw-error-message {
+    margin-left: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    color: $jam-red;
+  }
+}
+
 @include desktop {
   h1, .heading-01 {
     font-size: 72px;

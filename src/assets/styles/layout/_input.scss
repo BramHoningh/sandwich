@@ -57,25 +57,4 @@
       color: $jam-red;
     }
   }
-
-  .sw-input-error-wrapper {
-    position: absolute;
-    bottom: 0;
-    left: 8px;
-    display: flex;
-    width: calc(100% - 8px);
-    height: 24px;
-
-    .icon {
-      width: 16px;
-      height: 16px;
-    }
-
-    .sw-error-message {
-      margin-left: 8px;
-      font-size: 12px;
-      font-weight: 500;
-      color: $jam-red;
-    }
-  }
 }

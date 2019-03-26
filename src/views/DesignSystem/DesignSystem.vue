@@ -316,6 +316,13 @@
       />
     </div>
 
+    <div class="margin-l-top margin-l-bottom">
+      <DropdownSearch
+        :has-error="true"
+        error-message="Error message"
+      />
+    </div>
+
     <Accordion
       :items="[{title: 'First item', content: 'This is a first <a href=\'#\'>link</a> sdfdsfksjdf sdkjfls fjslfjdksl fjsdklfj sdklfjdsk lfjlksd fjklsd jfldsjfksdjfldsjf sdfjf kdsjfksdjlf'}, {title: 'Second item', content: 'This is a second <a href=\'#\'>link</a>'}]"
     />
