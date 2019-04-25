@@ -312,12 +312,14 @@
 
     <div class="margin-l-top margin-l-bottom">
       <DropdownSearch
-
+        :items="[{title: 'Leeuwarden', value: 'leeuwarden'}, {title: 'Groningen', value: 'groningen'}, {title: 'Amsterdam', value: 'amsterdam'}]"
+        :max-pick="1"
       />
     </div>
 
     <div class="margin-l-top margin-l-bottom">
       <DropdownSearch
+        :items="[{title: 'Leeuwarden', value: 'leeuwarden'}, {title: 'Groningen', value: 'groningen'}, {title: 'Amsterdam', value: 'amsterdam'}]"
         :has-error="true"
         error-message="Error message"
       />

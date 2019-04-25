@@ -5,25 +5,27 @@
   <div class="dropdown-search">
     <div
       :style="{'border-radius': borderRadius}"
-      :class="['dropdown-search-field', {'has-error': hasError}]"
+      :class="['dropdown-search-field', {'active': isOpen}, {'has-error': hasError}]"
       @click="toggleDropdown"
     >
-      <div class="dropdown-arrow-wrapper">
+      <div
+        class="dropdown-arrow-wrapper"
+      >
         <div class="dropdown-arrow">
           <Icon
-            name="dropdown"
+            :name="dropdownIcon"
           />
         </div>
       </div>
 
       <div class="dropdown-search-field-inner">
         <div
-          v-for="(item, index) in items"
+          v-for="(item, index) in activeItems"
           :key="index"
           class="dropdown-search-field-item"
         >
           <span class="item-name">
-            {{ item.label }}
+            {{ item.title }}
             <span
               class="close-item"
               @click="removeItem(item.value)"
@@ -47,6 +49,23 @@
       <div class="sw-error-message">
         {{ errorMessage }}
       </div>
+    </div>
+
+    <div
+      v-if="isOpen"
+      class="search-dropdown"
+    >
+      <ul>
+        <li
+          v-for="(item, index) in items"
+          :key="index"
+          :class="[{'active': isActiveItem(item)}]"
+          @click="toggleActiveItems(item)"
+        >
+          <Icon class="active-icon" name="read"/>
+          {{ item.title }}
+        </li>
+      </ul>
     </div>
   </div>
 </template>
