@@ -1,3 +1,4 @@
+export { default as DropdownSearch } from './DropdownSearch';
 export { default as HeaderBar } from './HeaderBar';
 export { default as Accordion } from './Accordion';
 export { default as RadioInput } from './input/RadioInput';

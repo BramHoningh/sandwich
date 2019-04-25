@@ -1,28 +1,18 @@
 {
   "name": "vue-sandwich",
+  "version": "0.1.1",
   "description": "A Vue component library based on the Sandwich Design System.",
   "author": "Pixeldenker <bram@pixeldenker.nl>",
-  "keywords": [
-    "component",
-    "library",
-    "vue",
-    "sandwich"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/pixeldenker/sandwich"
-  },
-  "version": "0.1.1",
-  "main": "./dist/sandwich.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
+    "build-bundle": "vue-cli-service build --target lib --name sandwich ./src/build.js",
     "make": "vue invoke vue-cli-plugin-structure-generator",
     "test:e2e": "vue-cli-service test:e2e",
-    "test:unit": "vue-cli-service test:unit",
-    "build-bundle": "vue-cli-service build --target lib --name sandwich ./src/build.js"
+    "test:unit": "vue-cli-service test:unit"
   },
+  "main": "./dist/sandwich.common.js",
   "files": [
     "dist/*",
     "*.json",
@@ -60,5 +50,15 @@
     "vue-cli-plugin-structure": "^0.7.2",
     "vue-cli-plugin-structure-generator": "^0.5.0",
     "vue-template-compiler": "^2.5.21"
+  },
+  "keywords": [
+    "component",
+    "library",
+    "vue",
+    "sandwich"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pixeldenker/sandwich"
   }
 }

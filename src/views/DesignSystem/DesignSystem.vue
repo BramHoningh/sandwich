@@ -310,6 +310,21 @@
       name="select-example"
     />
 
+    <div class="margin-l-top margin-l-bottom">
+      <DropdownSearch
+        :items="[{title: 'Leeuwarden', value: 'leeuwarden'}, {title: 'Groningen', value: 'groningen'}, {title: 'Amsterdam', value: 'amsterdam'}]"
+        :max-pick="1"
+      />
+    </div>
+
+    <div class="margin-l-top margin-l-bottom">
+      <DropdownSearch
+        :items="[{title: 'Leeuwarden', value: 'leeuwarden'}, {title: 'Groningen', value: 'groningen'}, {title: 'Amsterdam', value: 'amsterdam'}]"
+        :has-error="true"
+        error-message="Error message"
+      />
+    </div>
+
     <Accordion
       :items="[{title: 'First item', content: 'This is a first <a href=\'#\'>link</a> sdfdsfksjdf sdkjfls fjslfjdksl fjsdklfj sdklfjdsk lfjlksd fjklsd jfldsjfksdjfldsjf sdfjf kdsjfksdjlf'}, {title: 'Second item', content: 'This is a second <a href=\'#\'>link</a>'}]"
     />

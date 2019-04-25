@@ -14,12 +14,14 @@ import {
   RadioInput,
   Accordion,
   HeaderBar,
+  DropdownSearch,
 } from '.';
 
 /**
  *  Register components globally
  * */
 const components = {
+	DropdownSearch,
 	HeaderBar,
 	Accordion,
 	RadioInput,
